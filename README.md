@@ -78,7 +78,7 @@ Test Decorator Pattern:
 
 ## B> Design Patterns Application:
 
-### Exercise 1: Order Management System
+<u> ### Exercise 1: Order Management System </u>
 
 **Giải thích về lựa chọn Design Pattern (State Pattern):**
 
@@ -93,7 +93,7 @@ Test Decorator Pattern:
 Sử dụng State Pattern giúp chúng ta xây dựng hệ thống quản lý đơn hàng một cách mềm dẻo, dễ bảo trì và mở rộng. Nó loại bỏ được sự phức tạp của việc dùng `if-else` lồng nhau để kiểm tra trạng thái, và thay vào đó tổ chức code một cách có cấu trúc và dễ hiểu.
 
 
-### Exercise 2: Tax Calculation
+<u> ### Exercise 2: Tax Calculation </u>
 
 **Giải thích về lựa chọn Design Pattern (Strategy & Decorator Patterns):**
 
@@ -113,7 +113,7 @@ Sử dụng State Pattern giúp chúng ta xây dựng hệ thống quản lý đ
 Kết hợp Strategy Pattern và Decorator Pattern là một giải pháp mạnh mẽ và linh hoạt cho bài toán tính thuế. Strategy Pattern giúp quản lý các thuật toán tính thuế đa dạng, trong khi Decorator Pattern cho phép thêm các tính năng bổ sung một cách dễ dàng và tuân theo các nguyên tắc thiết kế hướng đối tượng tốt.
 
 
-### Exercise 3: Payment System
+<u> ### Exercise 3: Payment System </u>
 
 **Giải thích về lựa chọn Design Pattern (Strategy & Decorator Patterns):**
 
