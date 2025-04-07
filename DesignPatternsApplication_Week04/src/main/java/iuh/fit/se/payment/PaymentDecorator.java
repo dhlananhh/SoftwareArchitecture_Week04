@@ -1,14 +1,12 @@
 package iuh.fit.se.payment;
 
 public abstract class PaymentDecorator implements PaymentStrategy {
-	protected PaymentStrategy paymentStrategy; // HAS-A relationship
+	protected PaymentStrategy paymentStrategy;
 
-    public PaymentDecorator(PaymentStrategy strategy) {
-        this.paymentStrategy = strategy;
+    public PaymentDecorator(PaymentStrategy paymentStrategy) {
+        this.paymentStrategy = paymentStrategy;
     }
 
     @Override
-    public void pay(int amount) {
-        paymentStrategy.pay(amount); // Default: Delegate to base strategy
-    }
+    public abstract boolean processPayment(double amount);
 }
