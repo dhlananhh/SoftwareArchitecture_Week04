@@ -5,17 +5,12 @@ public class Product {
     private double price;
     private TaxStrategy taxStrategy;
 
-    public Product(String name, double price, TaxStrategy strategy) {
+    public Product(String name, double price, TaxStrategy taxStrategy) {
         this.name = name;
         this.price = price;
-        this.taxStrategy = strategy;
+        this.taxStrategy = taxStrategy;
     }
 
-    public double calculateTax() {
-        return taxStrategy.calculateTax(price);
-    }
-
-    // Getters (Name, Price, TaxStrategy) - Không bắt buộc nhưng nên có
     public String getName() {
         return name;
     }
@@ -24,7 +19,14 @@ public class Product {
         return price;
     }
 
-    public TaxStrategy getTaxStrategy() {
-        return taxStrategy;
+    public void setTaxStrategy(TaxStrategy taxStrategy) {
+        this.taxStrategy = taxStrategy;
+    }
+
+    public double calculateTax() {
+        if (taxStrategy != null) {
+            return taxStrategy.calculateTax(price);
+        }
+        return 0;
     }
 }
